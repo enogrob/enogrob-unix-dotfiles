@@ -3,8 +3,6 @@
 # for examples
 # Add git branch if its present to PS1
 
-
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -94,16 +92,12 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias tdy='cd ~/Today'
-alias tdp='cd ~/Projects'
 alias xclip='xclip -sel clip'
 alias open='xdg-open'
 alias gl='git log --oneline'
-alias tdy='cd ~/Today'
-alias tdp='cd ~/Projects'
 alias gsync='pushd .;cd ~/Google\ Drive;grive sync;popd'
 alias tree='tree -L 1'
-
+alias google-chrome='google-chrome --disable-gpu'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -146,8 +140,12 @@ alias rspec='_rspec_command'
 
 EDITOR=vim
 
-tdy
+source ~/.todayrc.sh
+
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
