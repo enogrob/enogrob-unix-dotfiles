@@ -145,7 +145,14 @@ source ~/.todayrc.sh
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export JAVA_HOME=/home/enogrob/.sdkman/candidates/java/current
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/enogrob/.sdkman"
+[[ -s "/home/enogrob/.sdkman/bin/sdkman-init.sh" ]] && source "/home/enogrob/.sdkman/bin/sdkman-init.sh"
