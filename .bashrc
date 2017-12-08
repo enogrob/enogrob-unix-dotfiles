@@ -98,6 +98,7 @@ alias gl='git log --oneline'
 alias gsync='pushd .;cd ~/Google\ Drive;grive sync;popd'
 alias tree='tree -L 1'
 alias google-chrome='google-chrome --disable-gpu'
+alias si='neofetch'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
